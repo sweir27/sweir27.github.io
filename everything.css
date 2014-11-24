@@ -1,0 +1,16 @@
+body {
+  padding: 50px;
+  font-family: Garamond;
+}
+
+.home-page-title {
+  padding-top: 50px;
+  font-size: 25pt;
+  color: #474747;
+  text-align: center;
+}
+
+.home-page-image {
+  text-align: center;
+  padding-top: 20px;
+}

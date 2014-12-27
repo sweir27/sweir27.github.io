@@ -2,12 +2,49 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="everything.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="glitch-image.js"></script>
+    <script type="text/javascript" src="events.js"></script>
     <title>Sarah A Weir</title>
   </head>
   <body>
     <div class='home-page-title'>Sarah Weir</div>
-    <div class='home-page-image'>
-      <img src='images/sarah_pre.jpg' />
+    <div class='glitch-control-panel'>
+      <div class='glitch-control-button'>
+        <a id='glitch-on'>Glitch on</a>
+      </div>
+      <div class='glitch-control-button'>
+        <a id='glitch-off'>Glitch off</a>
+      </div>
     </div>
+    <div class='home-page-image'>
+      <canvas id="canvas" width="427" height="640"></canvas>
+    </div>
+    <script>
+      var canvas = document.getElementById("canvas");
+      var ctx = canvas.getContext('2d');
+      var jpgHeaderLength;
+      var base64Chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
+      var base64Map = base64Chars.split("");
+      var reverseBase64Map = {};
+      base64Map.forEach(function(val, key) {
+        reverseBase64Map[val] = key
+      });
+
+      var glitchHistory = [];
+      var glitchCount = 0;
+      var glitchMax = 5;
+      var glitchTime;
+      var glitchRunning;
+
+      var initialImage = new Image();
+      var imgDataArr;
+      initialImage.onload = function() {
+        ctx.drawImage(initialImage, 0, 0);
+        startGlitch()
+      };
+      initialImage.setAttribute('crossOrigin', 'anonymous');
+      initialImage.src = "sarah.jpg";
+    </script>
   </body>
 </html>

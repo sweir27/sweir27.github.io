@@ -13,4 +13,29 @@ body {
 .home-page-image {
   text-align: center;
   padding-top: 20px;
+  clear: both;
+}
+
+.glitch-control-panel {
+  margin: 0 auto;
+  text-align: center;
+  width: 30%;
+}
+
+.glitch-control-button {
+  display: inline-block;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: lightgray;
+  cursor: pointer;
 }

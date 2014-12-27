@@ -106,12 +106,13 @@ function drawGlitchedImage(glitchyImage) {
 }
 
 function glitchDriver() {
-  if (glitchCount < glitchMax) {
-    glitchJpeg();
-  } else {
-    reverseHistory();
-  }
-  glitchTime = setTimeout(glitchDriver, 400);
+  // if (glitchCount < glitchMax) {
+  //   glitchJpeg();
+  // } else {
+  //   reverseHistory();
+  // }
+  glitchJpeg();
+  glitchTime = setTimeout(glitchDriver, 10);
 }
 
 function startGlitch() {

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<?xml version="1.0"?>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="everything.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/svg.js/1.0.1/svg.min.js'></script>
+    <script type="text/javascript" src="line-web.js"></script>
+    <script type="text/javascript" src="events.js"></script>
+    <title>Sarah A Weir</title>
+  </head>
+  <body>
+    <div class='home-page-title'>Sarah Weir</div>
+    <div class='control-panel'>
+      <div class='control-button'>
+        <a id='scribble-on'>Scribble on</a>
+      </div>
+      <div class='control-button'>
+        <a id='scribble-off'>Scribble off</a>
+      </div>
+    </div>
+    <div class='main-wrap'>
+      <div class='arrow-wrap'>
+        <a id='move-back' href='index.html'>
+          <img class='arrow arrow-back' src='left-arrow.png'></img>
+        </a>
+      </div>
+      <div class='main-image'>
+        <svg id='svg_canvas' xmlns="http://www.w3.org/2000/svg" width="638" height="425" >
+          <image x="0" y="0" width="638" height="425" xlink:href="Kids_SarahGrad.jpg" />
+        </svg>
+      </div>
+      <div class='arrow-wrap'>
+        <a id='move-forward' href='index.html'>
+          <img class='arrow arrow-forward' src='right-arrow.png'></img>
+        </a>
+      </div>
+    </div>
+    <script>
+      var svg = $('#svg_canvas');
+      var drawingInProgress;
+      var drawingTime;
+      startDrawing()
+    </script>
+  </body>
+</html>

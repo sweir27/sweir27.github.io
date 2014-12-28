@@ -10,19 +10,34 @@ body {
   text-align: center;
 }
 
-.home-page-image {
+.main-image {
   text-align: center;
   padding-top: 20px;
   clear: both;
+  display: inline-block;
 }
 
-.glitch-control-panel {
+.home-page-image {
+
+}
+
+.graduation-page-image {
+  height: 425px;
+}
+
+.main-wrap {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+.control-panel {
   margin: 0 auto;
   text-align: center;
   width: 30%;
 }
 
-.glitch-control-button {
+.control-button {
   display: inline-block;
   padding: 20px;
 }
@@ -38,4 +53,24 @@ a:visited {
 a:hover {
   color: lightgray;
   cursor: pointer;
+}
+
+.arrow {
+  height: 100px;
+}
+
+.arrow-wrap {
+  display: inline-block;
+}
+
+.arrow-wrap:hover {
+  cursor: pointer;
+}
+
+.arrow-forward {
+  float: right;
+}
+
+.arrow-back {
+  float: left;
 }

@@ -95,7 +95,7 @@ function animateAndDraw(path) {
   path.getBoundingClientRect();
   // Define our transition
   path.style.transition = path.style.WebkitTransition =
-    'stroke-dashoffset .1s';
+    'stroke-dashoffset 1s';
   // Go!
   path.style.strokeDashoffset = '0';
 }

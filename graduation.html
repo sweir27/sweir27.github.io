@@ -5,12 +5,12 @@
     <link rel="stylesheet" type="text/css" href="everything.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/svg.js/1.0.1/svg.min.js'></script>
-    <script type="text/javascript" src="line-web.js"></script>
+    <script type="text/javascript" src="em-eye-tee.js"></script>
     <script type="text/javascript" src="events.js"></script>
     <title>Sarah A Weir</title>
   </head>
   <body>
-    <div class='home-page-title'>Sarah Weir</div>
+    <div class='home-page-title'>College</div>
     <div class='control-panel'>
       <div class='control-button'>
         <a id='scribble-on'>Scribble on</a>
@@ -28,6 +28,7 @@
       <div class='main-image'>
         <svg id='svg_canvas' xmlns="http://www.w3.org/2000/svg" width="638" height="425" >
           <image x="0" y="0" width="638" height="425" xlink:href="Kids_SarahGrad.jpg" />
+          <rect x="0" y="0" width="638" height="425" style="fill:black;opacity:0.9" />
         </svg>
       </div>
       <div class='arrow-wrap'>
@@ -38,6 +39,8 @@
     </div>
     <script>
       var svg = $('#svg_canvas');
+      var letterWidth = 30;
+      var strokeWidth = .2
       var drawingInProgress;
       var drawingTime;
       startDrawing()

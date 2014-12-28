@@ -116,6 +116,7 @@ function glitchDriver() {
 }
 
 function startGlitch() {
+  ctx.drawImage(initialImage, 0, 0);
   glitchRunning = true;
   var imgData = canvas.toDataURL("image/jpeg");
   imgDataArr = base64ToByteArray(imgData);

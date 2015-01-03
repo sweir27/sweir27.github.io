@@ -1,10 +1,44 @@
+html {
+  overflow-y: scroll;
+}
+
 body {
-  padding: 50px;
   font-family: Garamond;
 }
 
+.nav {
+  /*position: fixed;*/
+  overflow: auto;
+  float: left;
+  width: 150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  background-color: white;
+}
+
+.nav-title {
+  font-size: 18px;
+  font-family: helvetica, sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+}
+
+.nav-option {
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-family: helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.main {
+  /*float: right;*/
+  padding-left: 150px;
+  padding-top: 20px;
+}
+
 .home-page-title {
-  padding-top: 50px;
+  /*padding-top: 30px;*/
   font-size: 25pt;
   color: #474747;
   text-align: center;
@@ -12,7 +46,7 @@ body {
 
 .main-image {
   text-align: center;
-  padding-top: 20px;
+  /*padding-top: 20px;*/
   clear: both;
   display: inline-block;
 }
@@ -40,6 +74,7 @@ body {
 .control-button {
   display: inline-block;
   padding: 20px;
+  padding-top: 0px;
 }
 
 a {

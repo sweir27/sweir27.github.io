@@ -31,6 +31,18 @@ body {
   text-transform: uppercase;
 }
 
+.left-foot {
+  padding-top: 300px;
+  font-size: 10pt;
+}
+
+.footer-info {
+  font-size: 8pt;
+  text-transform: uppercase;
+  font-family: helvetica, sans-serif;
+  padding-top: 5px;
+}
+
 .main {
   /*float: right;*/
   padding-left: 150px;

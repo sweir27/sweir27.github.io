@@ -102,7 +102,7 @@ function animateAndDraw(path) {
 
 function drawingDriver(x, y) {
   createPath()
-  drawingTime = setTimeout(drawingDriver, 100)
+  drawingTime = setTimeout(drawingDriver, 50)
 }
 
 function startDrawing() {

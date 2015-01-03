@@ -24,4 +24,15 @@ $(function() {
     clearTimeout(drawingTime)
     drawingInProgress = false;
   });
+
+  $('body').on('click', '#party-on', function(e) {
+    if (drawingInProgress == false) {
+      startDrawing()
+    }
+  });
+
+  $('body').on('click', '#party-off', function(e) {
+    clearTimeout(drawingTime)
+    drawingInProgress = false;
+  });
 });
